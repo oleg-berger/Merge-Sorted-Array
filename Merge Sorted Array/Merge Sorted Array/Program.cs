@@ -16,6 +16,12 @@ namespace Merge_Sorted_Array
         }
         static void Merge()
         {
+            
+            Console.Write("Enter m number: ");
+            int m = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Enter num 1: ");
+            int[] nums1 = EnterArray();
+
             Console.Write("Enter n number: ");
             int n = Convert.ToInt32(Console.ReadLine());
             Console.Write("Enter num 2: ");
@@ -26,14 +32,6 @@ namespace Merge_Sorted_Array
             {
                 nums2[i] = Convert.ToInt32(arrayStr[i]);
             }
-
-
-
-            Console.Write("Enter m number: ");
-            int m = Convert.ToInt32(Console.ReadLine());
-            Console.Write("Enter num 1: ");
-            int[] nums1 = EnterArray();
-
 
 
             int[] finalNum = SumArray(nums1, nums2, m, n);
